@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Start Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <h1>E-commerce</h1>
+        <form action="LoginServlet" method="post">
+            <label for="username">Nombre del usuario</label><br/>
+            <input name="username" type="text" id="username"><br/>
+            <label for="email">Email</label><br/>
+            <input name="email" type="email" id="email"><br/>
+            <label for="password" >Contraseña</label><br/>
+            <input name="password" type="password" id="password"><br/>
+            <p>Tipo de usuario</p>
+            <label for="adminUser" >Aministrador</label>
+            <input name="userType" type="radio" value="admin" id="adminUser">
+            <label for="clientUser" >Cliente</label>
+            <input name="userType" type="radio" value="client" id="clientUser">
+            <br/>
+            <button type="submit">Crear perfil</button>
+        </form>
+        <a href="view/inventory.jsp">Ir a inventario</a><br/>
+        <a href="view/shoppingCart.jsp">Ir a carrito de compra</a>
+    </body>
+</html>
